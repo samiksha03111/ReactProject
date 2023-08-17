@@ -1,0 +1,15 @@
+ <button id="btn-0">Button 1</button>
+  <button id="btn-1">Button 2</button>
+  <button id="btn-2">Button 3</button>
+  <div id="prize"></div>
+
+  <script>
+    const prizes = ['A Unicorn!', 'A Hug!', 'Fresh Laundry!'];
+    for (var bentium = 0; bentium < prizes.length; bentium++) {
+      //For each of our buttons when the user clicks it... 
+      document.getElementById(`btn-`+bentium).onclick = () => {
+        //Tell her what she's won!
+        document.getElementById("prize").innerHTML = prizes[bentium];
+      };
+    }
+  </script>
